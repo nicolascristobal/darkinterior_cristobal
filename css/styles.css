@@ -92,6 +92,7 @@ div .img_home {
     /* width: 100%;
     padding: 0px 35px; */
     max-width: 50%;
+    padding: 0px 35px;
 }
 
 .dark {
@@ -138,24 +139,42 @@ footer {
     text-align: center;
     padding: 30px 10%;
     border-top: 1px solid rgba(255, 255, 255, 0.5);
-}
-
-footer p {
     font-family: Arial, Helvetica, sans-serif;
     color: white;
 }
 
-/* -----------------------NOSOTROS----------------------------- */
+.redes {
+    display: flex;
+    justify-content: center;
+}
+
+.redes p {
+    margin: 0 20px;
+}
+
+.redes a {
+    margin: 0 20px;
+    text-decoration: none;
+}
+/* -----------------------COLECCION----------------------------- */
 
 .trabajos {
-    background: #f2f2f2;
+    background: white;
 }
 
 .fotitos {
-    padding: 60px 0;
+    padding: 95px 0;
     width: 90%;
-    max-width: 1000px;
+    max-width: 1400px;
     margin: auto;
+}
+
+.titulos {
+    color: #202126;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
 }
 
 .galeria_chiquita {
@@ -180,11 +199,44 @@ footer p {
     display: block;
 }
 
+.hover_fotito {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: hsla(228, 0%, 20%, 0.7);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover_fotito p {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 25px;
+}
+
+.imagen_chica:hover .hover_fotito {
+    transform: scale(1);
+}
+
 /* ---------------------------------servicios---------------------------------- */
 
 .servicios {
-    background: #202126;
+    background: white;
     padding-bottom: 30px;
+}
+
+.servi_titulo {
+    color: #202126;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    padding: 30px 0;
 }
 
 .contene_servi {
@@ -210,10 +262,12 @@ footer p {
 }
 
 .servi_img h3 {
+    font-family: Arial, Helvetica, sans-serif;
     margin: 10px 0;
 }
 
 .servi_img p {
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: 300;
     text-align: justify;
 }
@@ -222,39 +276,52 @@ footer p {
 
 
 
+.clientes {
+    height: 400px;
+    background-color: #202126;
+}
 
-
-
+.titulardo {
+    color: white;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    padding: 30px 0;
+}
 
 .comentario {
     display: flex;
-    justify-content: space-evenly;
-    background-color: white;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
 }
 
 .comentario .comentario_cajita {
-    background: #4d0686;
+    background: white;
     display: flex;
-    width: 46%;
+    width: 25%;
     height: 200px;
+    margin: 0 50px;
     align-items: center;
     justify-content: space-evenly;
     border-radius: 5px;
-    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+    /* box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.61); */
 }
 
 .comentario .comentario_cajita img {
     width: 100px;
     height: 100px;
     object-fit: cover;
-    border: 3px solid #fff;
+    border: 3px solid #202126;
     border-radius: 50%;
     display: block;
 }
 
 .comentario .comentario_cajita>.texto_coment {
     width: 60%;
-    color: #fff;
+    color: #202126;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
 }
 
 .comentario .comentario_cajita>.texto_coment p {
@@ -265,12 +332,63 @@ footer p {
 
 
 
+/* ---------------NOSOTROS--------------- */
 
+.nosotros_contenedor {
+    /* max-width: 1200px; */
+    margin: auto;
+    background-color: white;
+}
 
+.titular {
+    color: #202126;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    padding: 95px 0 30px 0;
+}
 
+.sobrenosotros {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 1200px;
+    margin: auto;
+    align-items: center;
+    padding: 60px 0 115px 0;
+}
 
+.imagen_about_us {
+    width: 45%;
+}
 
+.sobrenosotros .contiene_textos {
+    width: 45%;
+    background-color: #202126;
+    padding: 30px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
 
+.contiene_textos h2 {
+    margin: 15px;
+}
+
+.contiene_textos p {
+    padding: 10px;
+}
+
+.contiene_textos h2 span {
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    margin-right: 10px;
+}
 
 
 
@@ -284,22 +402,23 @@ footer p {
 }
 
 .logo_contacto {
-    text-align: center;
-    font-size: 3em;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: lighter;
-    margin: 20px;
     color: white;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 30px;
+    text-align: center;
+    padding: 60px 0 30px 0;
 }
 
 .tarjeta {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
+    /* box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3); */
     font-family: Arial, Helvetica, sans-serif;
     font-weight: lighter;
     font-size: 20px;
-    color: white;
+    color: #202126;
+    margin: 40px 0;
 }
 
 .tarjeta>* {
@@ -307,7 +426,7 @@ footer p {
 }
 
 .formulario {
-    background: #222222;
+    background: white;
 }
 
 .formulario h3 {
@@ -336,8 +455,8 @@ footer p {
     border: none;
     background: none;
     outline: none;
-    color: white;
-    border-bottom: 1px solid white;
+    color: #202126;
+    border-bottom: 1px solid #202126;
 }
 
 .formulario form button {
@@ -345,6 +464,7 @@ footer p {
     border: 0;
     text-transform: uppercase;
     padding: 1em;
+    color: white;
 }
 
 .formulario form button:hover,
@@ -398,6 +518,19 @@ i {
         justify-items: center;
     }
 
+    .principal_der {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
+    }
+
+    div .img_home {
+        /* width: 100%;
+        padding: 0px 35px; */
+        max-width: 50%;
+        padding: 0px 50px;
+    }
+
     .numerito {
         margin-top: 100px;
     }
@@ -431,6 +564,68 @@ i {
     .formulario_info p {
         text-align: center;
         padding: 0;
+    }
+
+    .imagen_chica {
+        width: 44%;
+    }
+
+    .hover_fotito p {
+        font-size: 15px;
+    }
+
+    .clientes {
+        height: 600px;
+    }
+
+    .comentario {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 500px;
+    }
+
+    .comentario .comentario_cajita {
+        width: 60%;
+        margin: 30px 0;
+    }
+
+    .cajita_servicio {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .servi_img {
+        width: 60%;
+        text-align: center;
+    }
+
+    .servi_img p {
+        text-align: center;
+    }
+
+    .servi_img:nth-child(1),
+    .servi_img:nth-child(2) {
+        margin-bottom: 80px;
+    }
+
+    .servi_img img {
+        width: 90%;
+    }
+
+    .sobrenosotros {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sobrenosotros .contiene_textos {
+        width: 80%;
+    }
+
+    .imagen_about_us {
+        width: 60%;
+        padding-bottom: 80px;
     }
 }
 
@@ -473,6 +668,25 @@ i {
         margin-left: 2rem;
     }
 
+    .principal_izq {
+        height: 300px;
+    }
+
+    .principal_der {
+        width: 100%;
+        justify-content: center;
+        margin: 0px 0 50px 0;
+        flex-direction: column;
+    }
+
+    div .img_home {
+        /* width: 100%;
+        padding: 0px 35px; */
+        margin: 0 auto;
+        max-width: 75%;
+        padding: 20px;
+    }
+
     .numerito {
         font-size: 20px;
         margin-top: 50px;
@@ -487,7 +701,64 @@ i {
         font-size: 50px;
     }
 
-    .principal_der {
-        margin: 0 0 70px 0;
+    .imagen_chica {
+        width: 85%;
+    }
+
+    .hover_fotito p {
+        font-size: 25px;
+    }
+
+    .clientes {
+        height: 600px;
+    }
+
+    .comentario {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 500px;
+    }
+
+    .comentario .comentario_cajita {
+        width: 85%;
+        margin: 30px 0;
+    }
+
+    .titulardo {
+        font-size: 20px;
+        padding: 30px 0 10px 0;
+    }
+
+    .cajita_servicio {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .servi_img {
+        width: 85%;
+        text-align: center;
+    }
+
+    .servi_img p {
+        text-align: center;
+    }
+
+    .servi_img:nth-child(1),
+    .servi_img:nth-child(2) {
+        margin-bottom: 80px;
+    }
+
+    .servi_img img {
+        width: 90%;
+    }
+
+    .sobrenosotros {
+        padding: 20px 0;
+    }
+
+    .imagen_about_us {
+        width: 75%;
+        padding-bottom: 40px;
     }
 }
