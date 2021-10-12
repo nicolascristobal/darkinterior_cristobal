@@ -7,9 +7,7 @@
 
 /* ---------------------------------------------------------------------- */
 body {
-  background-color: #202126;
-  /* background-color: white;  */
-  /* para ver con constraste nomas despues lo borro */ }
+  background-color: #202126; }
 
 .navbar {
   display: flex;
@@ -18,8 +16,7 @@ body {
   background-color: #202126;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
-  font-weight: lighter;
-  /* height: 90px; */ }
+  font-weight: lighter; }
 
 .navbar__titulo {
   font-size: 2rem;
@@ -75,8 +72,6 @@ body {
   margin: 140px 0; }
 
 div .img_home {
-  /* width: 100%;
-    padding: 0px 35px; */
   max-width: 50%;
   padding: 0px 35px; }
 
@@ -121,35 +116,30 @@ footer {
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   font-family: Arial, Helvetica, sans-serif;
   color: white; }
-
-.footer__redes {
-  display: flex;
-  justify-content: center; }
-
-.footer__redes p {
-  margin: 0 20px; }
-
-.footer__redes a {
-  margin: 0 20px;
-  text-decoration: none; }
+  footer .footer__redes {
+    display: flex;
+    justify-content: center; }
+    footer .footer__redes p {
+      margin: 0 20px; }
+    footer .footer__redes a {
+      margin: 0 20px;
+      text-decoration: none; }
 
 /* -----------------------COLECCION----------------------------- */
 .trabajos {
   background: white;
-  background-color: pink; }
-
-.trabajos__fotitos {
-  padding: 95px 0 145px 0;
-  width: 90%;
-  max-width: 1400px;
-  margin: auto; }
-
-.titulos {
-  color: #202126;
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 30px;
-  text-align: center;
-  margin-bottom: 60px; }
+  background-color: white; }
+  .trabajos .trabajos__fotitos {
+    padding: 95px 0 145px 0;
+    width: 90%;
+    max-width: 1400px;
+    margin: auto; }
+    .trabajos .trabajos__fotitos .titulos {
+      color: #202126;
+      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+      font-size: 30px;
+      text-align: center;
+      margin-bottom: 60px; }
 
 .galeria_chiquita {
   display: flex;
@@ -182,12 +172,11 @@ footer {
   justify-content: center;
   align-items: center;
   flex-direction: column; }
-
-.hover_fotito p {
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: lighter;
-  font-size: 25px; }
+  .hover_fotito p {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 25px; }
 
 .imagen_chica:hover .hover_fotito {
   transform: scale(1); }
@@ -196,6 +185,11 @@ footer {
 .servicios {
   background: white;
   padding-bottom: 30px; }
+  .servicios .servicios__conteneservi {
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto; }
 
 .servi_titulo {
   color: #202126;
@@ -203,12 +197,6 @@ footer {
   font-size: 30px;
   text-align: center;
   padding: 30px 0; }
-
-.servicios__conteneservi {
-  padding: 60px 0;
-  width: 90%;
-  max-width: 1000px;
-  margin: auto; }
 
 .cajita_servicio {
   display: flex;
@@ -234,13 +222,12 @@ footer {
 .clientes {
   height: 400px;
   background-color: #202126; }
-
-.clientes__titulardo {
-  color: white;
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 30px;
-  text-align: center;
-  padding: 30px 0; }
+  .clientes .clientes__titulardo {
+    color: white;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    padding: 30px 0; }
 
 .clientes__comentario {
   display: flex;
@@ -256,8 +243,7 @@ footer {
   margin: 0 50px;
   align-items: center;
   justify-content: space-evenly;
-  border-radius: 5px;
-  /* box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.61); */ }
+  border-radius: 5px; }
 
 .clientes__comentario .comentario_cajita img {
   width: 100px;
@@ -279,24 +265,21 @@ footer {
 
 /* ---------------NOSOTROS--------------- */
 .nosotros {
-  /* max-width: 1200px; */
   margin: auto;
   background-color: white; }
-
-.nosotros__titular {
-  color: #202126;
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 30px;
-  text-align: center;
-  padding: 95px 0 30px 0; }
-
-.nosotros__sobrenosotros {
-  display: flex;
-  justify-content: space-evenly;
-  max-width: 1200px;
-  margin: auto;
-  align-items: center;
-  padding: 60px 0 115px 0; }
+  .nosotros .nosotros__titular {
+    color: #202126;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    padding: 95px 0 30px 0; }
+  .nosotros .nosotros__sobrenosotros {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 1200px;
+    margin: auto;
+    align-items: center;
+    padding: 60px 0 115px 0; }
 
 .imagen_about_us {
   width: 45%; }
@@ -332,19 +315,17 @@ footer {
   margin-left: auto;
   margin-right: auto;
   padding: 1.5em; }
-
-.content__logocontacto {
-  color: white;
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-  font-weight: lighter;
-  font-size: 30px;
-  text-align: center;
-  padding: 60px 0 30px 0; }
+  .content .content__logocontacto {
+    color: white;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 30px;
+    text-align: center;
+    padding: 60px 0 30px 0; }
 
 .content__tarjeta {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  /* box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3); */
   font-family: Arial, Helvetica, sans-serif;
   font-weight: lighter;
   font-size: 20px;
@@ -393,7 +374,6 @@ footer {
 .content__formulario form button:focus {
   background: burlywood;
   color: black;
-  /* transition: background-color ease-out; */
   outline: 0; }
 
 .content__formularioinfo {
@@ -431,8 +411,6 @@ i {
     justify-content: center;
     margin: 20px 0; }
   div .img_home {
-    /* width: 100%;
-        padding: 0px 35px; */
     max-width: 50%;
     padding: 0px 50px; }
   .numerito {
@@ -523,8 +501,6 @@ i {
     margin: 0px 0 50px 0;
     flex-direction: column; }
   div .img_home {
-    /* width: 100%;
-        padding: 0px 35px; */
     margin: 0 auto;
     max-width: 75%;
     padding: 20px; }
